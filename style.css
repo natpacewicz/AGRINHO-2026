@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --verde-escuro: #1f5f35;
+  --verde: #2f8f4e;
+  --verde-claro: #dceecb;
+  --marrom: #5a351d;
+  --terra: #d8bd88;
+  --amarelo: #f0b84d;
+  --creme: #fff8e6;
+  --texto: #24190f;
+  --branco: #ffffff;
+  --sombra: 0 14px 35px rgba(36, 25, 15, 0.14);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(240, 184, 77, 0.28), transparent 32rem),
+    radial-gradient(circle at top right, rgba(47, 143, 78, 0.22), transparent 28rem),
+    linear-gradient(135deg, #fff7df 0%, #efe0bc 55%, #d7bd86 100%);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 14px 24px;
+  background: rgba(255, 248, 230, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(36, 25, 15, 0.1);
+}
+
+nav {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+nav h1 {
+  margin: 0;
+  color: var(--verde-escuro);
+  font-size: 1.45rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 13px;
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+  transition: 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--creme);
+  background: var(--verde-escuro);
+}
+
+main {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 36px 24px 0;
+}
+
+section {
+  margin-bottom: 28px;
+  padding: 34px;
+  border: 1px solid rgba(90, 53, 29, 0.14);
+  border-radius: 28px;
+  background: rgba(255, 248, 230, 0.78);
+  box-shadow: var(--sombra);
+}
+
+section:first-child {
+  min-height: 430px;
+  display: grid;
+  align-content: center;
+  color: var(--creme);
+  background:
+    linear-gradient(120deg, rgba(31, 95, 53, 0.92), rgba(90, 53, 29, 0.75)),
+    linear-gradient(135deg, var(--verde), var(--marrom));
+  overflow: hidden;
+}
+
+section:first-child h2 {
+  max-width: 760px;
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  line-height: 0.95;
+}
+
+section:first-child p {
+  max-width: 680px;
+  font-size: 1.2rem;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+  color: var(--verde-escuro);
+  line-height: 1.1;
+}
+
+section:first-child h2,
+section:first-child h3 {
+  color: var(--creme);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 1.04rem;
+}
+
+article {
+  margin-top: 18px;
+  padding: 24px;
+  border-left: 7px solid var(--amarelo);
+  border-radius: 22px;
+  background: var(--branco);
+}
+
+#pergunta-norteadora {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 28px;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(220, 238, 203, 0.9), rgba(255, 248, 230, 0.92));
+}
+
+#producao,
+#sustentabilidade,
+#desafios,
+#solucoes,
+#interatividade,
+#contato {
+  position: relative;
+}
+
+#producao::before,
+#sustentabilidade::before,
+#desafios::before,
+#solucoes::before,
+#interatividade::before,
+#contato::before {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 8px 13px;
+  color: var(--marrom);
+  background: rgba(240, 184, 77, 0.32);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#producao::before {
+  content: 'Produção e economia';
+}
+
+#sustentabilidade::before {
+  content: 'Campo sustentável';
+}
+
+#desafios::before {
+  content: 'Atenção ambiental';
+}
+
+#solucoes::before {
+  content: 'Futuro do agro';
+}
+
+#interatividade::before {
+  content: 'Próximas etapas';
+}
+
+#contato::before {
+  content: 'Conscientização';
+}
+
+#producao article,
+#sustentabilidade article,
+#desafios article,
+#solucoes article {
+  min-height: 170px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#producao article:hover,
+#sustentabilidade article:hover,
+#desafios article:hover,
+#solucoes article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(36, 25, 15, 0.12);
+}
+
+#interatividade {
+  color: var(--creme);
+  background: linear-gradient(135deg, var(--verde-escuro), var(--marrom));
+}
+
+#interatividade h2,
+#interatividade::before {
+  color: var(--creme);
+}
+
+#interatividade::before {
+  background: rgba(255, 248, 230, 0.18);
+}
+
+#contato {
+  background: linear-gradient(135deg, rgba(255, 248, 230, 0.92), rgba(220, 238, 203, 0.92));
+}
+
+footer {
+  margin-top: 60px;
+  padding: 32px 20px;
+  color: var(--creme);
+  text-align: center;
+  background: var(--marrom);
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+@media (max-width: 820px) {
+  header {
+    position: static;
+  }
+
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+  }
+
+  main {
+    padding-inline: 16px;
+  }
+
+  section,
+  article {
+    padding: 24px;
+  }
+
+  #pergunta-norteadora {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  nav h1 {
+    font-size: 1.25rem;
+  }
+
+  nav ul {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+    background: rgba(47, 143, 78, 0.1);
+  }
+
+  section:first-child {
+    min-height: 360px;
+  }
+
+  section:first-child h2 {
+    font-size: 2.4rem;
+  }
+}
