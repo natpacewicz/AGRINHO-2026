@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tecnologia e reflorestamento no campo</title>
+  <desc id="desc">Ilustração gerada por IA em estilo infográfico mostrando energia solar, irrigação inteligente e reflorestamento.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff8e6"/>
+      <stop offset="0.42" stop-color="#dceecb"/>
+      <stop offset="1" stop-color="#74b7bf"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" x2="1">
+      <stop offset="0" stop-color="#5d341b"/>
+      <stop offset="1" stop-color="#2b190f"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#b9d96f"/>
+      <stop offset="1" stop-color="#1f6b3a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="22" flood-color="#2b190f" flood-opacity="0.25"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.1"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <circle cx="220" cy="160" r="90" fill="#f0b84d" opacity="0.85"/>
+  <circle cx="220" cy="160" r="140" fill="#f0b84d" opacity="0.18"/>
+  <path d="M0 610 C180 560 320 590 500 535 C730 465 920 560 1120 500 C1250 460 1330 470 1400 445 L1400 900 L0 900 Z" fill="#2f8f4e" opacity="0.55"/>
+  <path d="M0 675 C230 620 390 700 590 626 C800 548 1030 648 1400 570 L1400 900 L0 900 Z" fill="url(#soil)"/>
+  <g transform="translate(185 505)" filter="url(#shadow)">
+    <rect x="0" y="0" width="280" height="165" rx="24" fill="#263f46"/>
+    <path d="M18 24 H262 M18 68 H262 M18 112 H262 M72 0 V165 M132 0 V165 M192 0 V165" stroke="#74b7bf" stroke-width="6" opacity="0.8"/>
+    <path d="M0 165 L280 165 L230 218 L-50 218Z" fill="#1f5f35"/>
+  </g>
+  <g transform="translate(650 360)">
+    <path d="M0 280 C-60 202 -58 132 0 70 C58 132 60 202 0 280Z" fill="#74b7bf" opacity="0.25"/>
+    <path d="M0 280 V35" stroke="#245144" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="48" fill="#74b7bf"/>
+    <circle cx="0" cy="0" r="22" fill="#fff8e6"/>
+    <path d="M0 92 C-100 118 -150 188 -142 272" fill="none" stroke="#74b7bf" stroke-width="10" stroke-linecap="round" stroke-dasharray="18 18"/>
+    <path d="M0 92 C100 118 150 188 142 272" fill="none" stroke="#74b7bf" stroke-width="10" stroke-linecap="round" stroke-dasharray="18 18"/>
+  </g>
+  <g transform="translate(930 530)">
+    <rect x="-14" y="20" width="28" height="190" rx="14" fill="#5d341b"/>
+    <path d="M0 -90 C-135 -18 -142 92 0 136 C142 92 135 -18 0 -90Z" fill="url(#leaf)"/>
+    <path d="M0 -58 V132 M0 6 C-56 14 -91 48 -112 91 M0 40 C57 47 90 80 112 111" stroke="#fff8e6" stroke-width="8" opacity="0.58" fill="none"/>
+  </g>
+  <g transform="translate(1090 612) scale(0.72)">
+    <rect x="-14" y="20" width="28" height="180" rx="14" fill="#5d341b"/>
+    <path d="M0 -84 C-120 -18 -128 82 0 124 C128 82 120 -18 0 -84Z" fill="#52a05b"/>
+  </g>
+  <g transform="translate(812 642) scale(0.62)">
+    <rect x="-14" y="20" width="28" height="180" rx="14" fill="#5d341b"/>
+    <path d="M0 -84 C-120 -18 -128 82 0 124 C128 82 120 -18 0 -84Z" fill="#1f6b3a"/>
+  </g>
+  <g opacity="0.78">
+    <path d="M130 785 C270 710 375 735 520 682 C710 613 835 680 1035 626 C1190 585 1280 592 1400 548" fill="none" stroke="#fff8e6" stroke-width="12" stroke-linecap="round" stroke-dasharray="2 34"/>
+    <path d="M0 820 C230 745 400 772 600 705 C805 636 1035 730 1400 650" fill="none" stroke="#b9d96f" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 28"/>
+  </g>
+  <g transform="translate(330 270)">
+    <rect x="-76" y="-76" width="152" height="152" rx="36" fill="#fff8e6" opacity="0.78"/>
+    <path d="M-36 24 C-20 -50 40 -48 42 24" fill="none" stroke="#1f6b3a" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="-36" cy="24" r="18" fill="#f0b84d"/>
+    <circle cx="42" cy="24" r="18" fill="#f0b84d"/>
+    <path d="M-4 -50 V-86 M-4 -86 L38 -110" stroke="#1f6b3a" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <rect width="1400" height="900" filter="url(#grain)" opacity="0.38"/>
+</svg>

@@ -119,4 +119,33 @@ document.addEventListener('DOMContentLoaded', () => {
     interactiveSection.appendChild(button);
     interactiveSection.appendChild(result);
   }
+
+  const aiImages = document.querySelectorAll('[data-ai-image]');
+
+  aiImages.forEach((figure) => {
+    figure.tabIndex = 0;
+    figure.setAttribute('role', 'button');
+    figure.setAttribute('aria-label', 'Imagem gerada por IA integrada ao site');
+
+    function highlightImage() {
+      const caption = figure.querySelector('figcaption');
+      figure.classList.toggle('realce-js');
+
+      if (caption) {
+        caption.textContent = figure.classList.contains('realce-js')
+          ? 'Imagem gerada por IA integrada ao HTML, CSS e JavaScript do projeto.'
+          : figure.dataset.aiImage === 'campo'
+            ? 'Plantação sustentável com sensores, drone e energia limpa.'
+            : 'Tecnologia verde: energia solar, irrigação inteligente e reflorestamento.';
+      }
+    }
+
+    figure.addEventListener('click', highlightImage);
+    figure.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        highlightImage();
+      }
+    });
+  });
 });
