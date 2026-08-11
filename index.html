@@ -3,16 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Site educativo sobre agronegócio sustentável, produção agrícola e preservação ambiental." />
+  <meta name="description" content="Site educativo sobre agronegócio sustentável, tecnologias no campo, impactos ambientais e soluções para o futuro." />
   <title>Agro Forte, Futuro Sustentável</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Agro Forte, Futuro Sustentável</h1>
+  <div class="grain" aria-hidden="true"></div>
 
-      <ul>
+  <header class="site-header" id="topo">
+    <nav class="navbar" aria-label="Menu principal">
+      <a class="brand" href="#topo" aria-label="Agro Forte - página inicial">
+        <span class="brand-mark">AF</span>
+        <span>
+          <strong>Agro Forte</strong>
+          <small>Futuro Sustentável</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <ul class="menu" id="main-menu">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#producao">Produção</a></li>
         <li><a href="#sustentabilidade">Sustentabilidade</a></li>
@@ -24,92 +39,323 @@
   </header>
 
   <main>
-    <section id="inicio">
-      <div class="texto-hero">
-        <span class="etiqueta">Imagem gerada por IA</span>
-        <h2>Equilíbrio entre produção e meio ambiente</h2>
+    <section class="hero" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Agro forte, futuro sustentável</p>
+        <h1>Equilíbrio entre produção e meio ambiente.</h1>
+        <p class="slogan">“Produzir hoje preservando o amanhã.”</p>
         <p>
-          Este site apresenta a importância do agronegócio brasileiro e mostra como a produção agrícola pode crescer de forma sustentável.
+          O agronegócio brasileiro alimenta pessoas, movimenta a economia e abre caminhos para inovação. O desafio é crescer com responsabilidade, conservando água, solo, florestas e biodiversidade.
         </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#sustentabilidade">Saiba Mais</a>
+          <a class="btn secondary" href="#calculadora">Calcular impacto</a>
+        </div>
       </div>
-      <figure class="imagem-ia destaque" data-ai-image="campo">
-        <img src="assets/agro-sustentavel-ia.svg" alt="Ilustração gerada por IA de uma plantação sustentável com tecnologia no campo" />
-        <figcaption>Plantação sustentável com sensores, drone e energia limpa.</figcaption>
+
+      <figure class="hero-visual hero-photo reveal" aria-label="Imagem real de plantação sustentável ao pôr do sol">
+        <figcaption>
+          <span>Campo sustentável</span>
+          <strong>Tecnologia, solo vivo e produção consciente.</strong>
+        </figcaption>
       </figure>
     </section>
 
-    <section id="pergunta-norteadora">
-      <h2>Como crescer sem comprometer as futuras gerações?</h2>
+    <section class="intro section-panel reveal" aria-labelledby="pergunta-title">
+      <div>
+        <p class="eyebrow">Pergunta norteadora</p>
+        <h2 id="pergunta-title">Como crescer sem comprometer as futuras gerações?</h2>
+      </div>
       <p>
-        A proposta do projeto é refletir sobre tecnologias, práticas sustentáveis e soluções que ajudam a preservar os recursos naturais.
+        O agronegócio pode crescer de forma sustentável utilizando tecnologias modernas, energias renováveis e práticas agrícolas conscientes, equilibrando produção, preservação ambiental e qualidade de vida para as próximas gerações.
       </p>
     </section>
 
-    <section id="producao">
-      <h2>Produção Agrícola</h2>
-      <article>
-        <h3>Importância do agronegócio</h3>
-        <p>
-          Espaço reservado para explicar a participação do agronegócio na economia, na geração de empregos e na produção de alimentos.
-        </p>
-      </article>
-    </section>
+    <section class="section production" id="producao">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Seção 1</p>
+        <h2>Produção Agrícola</h2>
+        <p>Economia, exportações, tecnologia e produtividade trabalhando juntas.</p>
+      </div>
 
-    <section id="sustentabilidade">
-      <h2>Sustentabilidade no Campo</h2>
-      <div class="conteudo-com-imagem">
-        <article>
-          <h3>Práticas sustentáveis</h3>
+      <div class="split-grid">
+        <article class="text-card reveal">
+          <h3>Importância do agronegócio para a economia</h3>
           <p>
-            Espaço reservado para apresentar conservação do solo, rotação de culturas, energia limpa e irrigação sustentável.
+            O agronegócio é um dos setores mais importantes da economia brasileira. Ele gera empregos, movimenta exportações e fornece alimentos para o país e para o mundo. O setor envolve produção agrícola, pecuária, transporte, tecnologia e comércio.
           </p>
+          <ul class="check-list">
+            <li>Crescimento da produção agrícola</li>
+            <li>Exportações de alimentos e matérias-primas</li>
+            <li>Uso de máquinas, sensores, softwares e conectividade</li>
+          </ul>
         </article>
-        <figure class="imagem-ia" data-ai-image="tecnologia">
-          <img src="assets/tecnologia-verde-ia.svg" alt="Ilustração gerada por IA sobre tecnologia verde, energia solar e reflorestamento" />
-          <figcaption>Tecnologia verde: energia solar, irrigação inteligente e reflorestamento.</figcaption>
-        </figure>
+
+        <div class="chart-card reveal" aria-label="Gráfico ilustrativo de crescimento do agronegócio">
+          <h3>Crescimento do agronegócio</h3>
+          <div class="bar-chart">
+            <span style="--value: 42%"><b>2020</b></span>
+            <span style="--value: 56%"><b>2021</b></span>
+            <span style="--value: 64%"><b>2022</b></span>
+            <span style="--value: 73%"><b>2023</b></span>
+            <span style="--value: 82%"><b>2024</b></span>
+          </div>
+          <p>Dados ilustrativos para demonstrar avanço produtivo com modernização no campo.</p>
+        </div>
+      </div>
+
+      <div class="image-strip reveal" aria-label="Imagens ilustrativas de plantações sustentáveis, solo fértil e agricultura tecnológica">
+        <figure class="farm-photo plantation"><figcaption>Plantações sustentáveis</figcaption></figure>
+        <figure class="farm-photo soil"><figcaption>Solo fértil</figcaption></figure>
+        <figure class="farm-photo tech"><figcaption>Agricultura tecnológica</figcaption></figure>
       </div>
     </section>
 
-    <section id="desafios">
-      <h2>Desafios Ambientais</h2>
-      <article>
-        <h3>Impactos do uso inadequado dos recursos naturais</h3>
-        <p>
-          Espaço reservado para falar sobre desmatamento, uso excessivo da água, emissão de carbono e mudanças climáticas.
-        </p>
+    <section class="section sustainability" id="sustentabilidade">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Seção 2</p>
+        <h2>Sustentabilidade no Campo</h2>
+        <p>Produzir alimentos sem destruir os recursos naturais.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="eco-card reveal">
+          <span class="icon">🌱</span>
+          <h3>Conservação do solo</h3>
+          <p>Protege a fertilidade, reduz erosão e mantém a vida microbiana essencial para a produção.</p>
+        </article>
+        <article class="eco-card reveal">
+          <span class="icon">🔄</span>
+          <h3>Rotação de culturas</h3>
+          <p>Alterna espécies cultivadas para recuperar nutrientes e diminuir pragas naturalmente.</p>
+        </article>
+        <article class="eco-card reveal">
+          <span class="icon">☀️</span>
+          <h3>Energia solar</h3>
+          <p>Diminui custos e substitui fontes poluentes por energia limpa nas propriedades rurais.</p>
+        </article>
+        <article class="eco-card reveal">
+          <span class="icon">💧</span>
+          <h3>Irrigação sustentável</h3>
+          <p>Sistemas inteligentes aplicam a quantidade ideal de água e reduzem desperdícios.</p>
+        </article>
+      </div>
+
+      <div class="tech-lab reveal" aria-labelledby="tecnologias-title">
+        <div>
+          <p class="eyebrow">Tecnologias sustentáveis</p>
+          <h3 id="tecnologias-title">Precisão para gastar menos e preservar mais</h3>
+          <p>
+            GPS, sensores, drones, softwares, energia renovável e irrigação automatizada ajudam produtores a tomar decisões mais eficientes.
+          </p>
+        </div>
+        <div class="tech-icons" aria-label="Ícones de água, energia limpa, natureza, tecnologia e sustentabilidade">
+          <span>💧 Água</span>
+          <span>☀️ Energia limpa</span>
+          <span>🌿 Natureza</span>
+          <span>🚜 Tecnologia</span>
+          <span>♻️ Sustentabilidade</span>
+        </div>
+      </div>
+
+      <article class="video-card reveal" aria-labelledby="video-title">
+        <a class="youtube-frame fake-player" href="https://www.youtube.com/watch?v=1DQemxXZtWQ" target="_blank" rel="noopener noreferrer" aria-label="Assistir vídeo sobre sustentabilidade no YouTube">
+          <img src="https://i.ytimg.com/vi/1DQemxXZtWQ/maxresdefault.jpg" alt="Thumbnail do vídeo sobre sustentabilidade no campo" />
+          <span class="fake-player-overlay">
+            <span class="fake-play-button">▶</span>
+            <span class="fake-player-text">Assistir no YouTube</span>
+          </span>
+        </a>
+        <div>
+          <p class="eyebrow">Vídeo real</p>
+          <h3 id="video-title">Sustentabilidade no campo</h3>
+          <p>O vídeo apresenta práticas e tecnologias que ajudam o agronegócio a produzir com mais eficiência e menor impacto ambiental.</p>
+        </div>
       </article>
     </section>
 
-    <section id="solucoes">
-      <h2>Soluções e Futuro</h2>
-      <article>
-        <h3>Caminhos para um agro mais sustentável</h3>
-        <p>
-          Espaço reservado para apresentar reflorestamento, agricultura regenerativa, tecnologias inteligentes e educação ambiental.
-        </p>
-      </article>
+    <section class="section challenges" id="desafios">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Seção 3</p>
+        <h2>Desafios Ambientais</h2>
+        <p>Impactos que exigem controle, fiscalização e mudança de práticas.</p>
+      </div>
+
+      <div class="challenge-grid">
+        <article class="impact-card reveal photo-impact">
+          <h3>Desmatamento</h3>
+          <p>A expansão agrícola sem controle pode causar perda de florestas e biodiversidade.</p>
+          <div class="before-after real-compare" aria-label="Comparação realista antes e depois do desmatamento">
+            <span class="forest-before">Antes</span>
+            <span class="forest-after">Depois</span>
+          </div>
+        </article>
+        <article class="impact-card reveal">
+          <h3>Uso excessivo da água</h3>
+          <p>A agricultura consome grande quantidade de água, tornando necessário o uso consciente.</p>
+          <div class="donut" style="--percent: 70"><b>70%</b><small>uso hídrico ilustrativo</small></div>
+        </article>
+        <article class="impact-card reveal">
+          <h3>Emissão de carbono</h3>
+          <p>Máquinas, queimadas e produção intensiva aumentam a emissão de gases poluentes.</p>
+          <div class="carbon-meter"><span></span><span></span><span></span><span></span></div>
+        </article>
+        <article class="impact-card reveal climate-card">
+          <h3>Mudanças climáticas</h3>
+          <p>Secas, ondas de calor e chuvas extremas prejudicam safras, solos, rios e comunidades rurais.</p>
+          <div class="climate-rings" aria-hidden="true"><span></span><span></span><span></span></div>
+        </article>
+      </div>
     </section>
 
-    <section id="interatividade">
-      <h2>Recursos Interativos</h2>
-      <p>
-        Nesta parte do site poderão ser adicionados recursos como calculadora de impacto ambiental, quiz, galeria comparativa e mapa agrícola.
-      </p>
+    <section class="section future" id="solucoes">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Seção 4</p>
+        <h2>Soluções e Futuro</h2>
+        <p>Práticas conscientes e inovação para equilibrar produção e preservação.</p>
+      </div>
+
+      <div class="solutions-board reveal">
+        <div class="solutions-copy">
+          <p class="eyebrow">Plano de equilíbrio</p>
+          <h3>Produzir mais sem ocupar mais</h3>
+          <p>
+            O futuro do agro depende de recuperar áreas degradadas, usar tecnologia para medir impactos e transformar a propriedade rural em um sistema produtivo, limpo e resiliente.
+          </p>
+        </div>
+        <ul>
+          <li>Reflorestamento</li>
+          <li>Agricultura regenerativa</li>
+          <li>Uso de energias limpas</li>
+          <li>Controle do uso da água</li>
+          <li>Tecnologias inteligentes</li>
+          <li>Educação ambiental</li>
+          <li>Fiscalização ambiental</li>
+        </ul>
+      </div>
+
+      <div class="future-showcase reveal" aria-label="Imagens reais de soluções sustentáveis no agronegócio">
+        <figure class="solution-photo regenerative"><figcaption>Agricultura regenerativa</figcaption></figure>
+        <figure class="solution-photo solar-farm"><figcaption>Energia limpa no campo</figcaption></figure>
+        <figure class="solution-photo smart-irrigation"><figcaption>Irrigação e cultivo protegido</figcaption></figure>
+      </div>
+
+      <div class="timeline reveal" aria-label="Linha do tempo tecnológica">
+        <div><time>Hoje</time><strong>Drones agrícolas</strong><p>Monitoram plantações, identificam pragas e aumentam a precisão.</p></div>
+        <div><time>Próximo ciclo</time><strong>Inteligência artificial</strong><p>Analisa clima, solo e produtividade para orientar decisões.</p></div>
+        <div><time>Futuro</time><strong>Produção regenerativa</strong><p>Recupera áreas degradadas e amplia a biodiversidade.</p></div>
+      </div>
+
+      <div class="interactive-grid">
+        <section class="calculator reveal" id="calculadora" aria-labelledby="calc-title">
+          <h3 id="calc-title">Calculadora de impacto ambiental</h3>
+          <form id="impactForm">
+            <label>
+              Água usada por dia (litros)
+              <input type="number" id="waterInput" min="0" placeholder="Ex.: 120" required />
+            </label>
+            <label>
+              Energia usada por mês (kWh)
+              <input type="number" id="energyInput" min="0" placeholder="Ex.: 180" required />
+            </label>
+            <label>
+              Área com práticas sustentáveis (%)
+              <input type="number" id="greenInput" min="0" max="100" placeholder="Ex.: 45" required />
+            </label>
+            <button class="btn primary" type="submit">Estimar impacto</button>
+          </form>
+          <output id="impactResult" class="result-box">Preencha os dados para ver uma estimativa.</output>
+        </section>
+
+        <section class="quiz reveal" aria-labelledby="quiz-title">
+          <h3 id="quiz-title">Quiz sobre sustentabilidade</h3>
+          <p id="quizQuestion"></p>
+          <div id="quizOptions" class="quiz-options"></div>
+          <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+        </section>
+      </div>
+
+      <section class="gallery reveal" aria-labelledby="gallery-title">
+        <div class="section-heading compact">
+          <h3 id="gallery-title">Galeria interativa</h3>
+          <p>Compare práticas sustentáveis e não sustentáveis.</p>
+        </div>
+        <div class="gallery-controls" role="tablist" aria-label="Escolha uma comparação">
+          <button type="button" class="active" data-gallery="soil">Solo</button>
+          <button type="button" data-gallery="water">Água</button>
+          <button type="button" data-gallery="energy">Energia</button>
+        </div>
+        <div class="gallery-stage" id="galleryStage">
+          <div class="practice bad gallery-bad"><strong>Prática sem controle</strong><span id="badPractice">Solo exposto e erosão.</span></div>
+          <div class="practice good gallery-good"><strong>Prática sustentável</strong><span id="goodPractice">Cobertura vegetal e rotação de culturas.</span></div>
+        </div>
+      </section>
+
+      <section class="map-section reveal" aria-labelledby="map-title">
+        <div class="map-content">
+          <p class="eyebrow">Mapa agrícola</p>
+          <h3 id="map-title">Mapa agrícola do Brasil</h3>
+          <p>Regiões agrícolas e exemplos de tecnologias utilizadas para produzir com mais eficiência e responsabilidade ambiental.</p>
+        </div>
+
+        <div class="brazil-map" aria-label="Mapa agrícola do Brasil">
+          <img src="https://i.imgur.com/b8VD6GD.png" alt="Mapa do Brasil" />
+          <button type="button" data-region="Norte">Norte</button>
+          <button type="button" data-region="Nordeste">Nordeste</button>
+          <button type="button" data-region="Centro-Oeste">Centro-Oeste</button>
+          <button type="button" data-region="Sudeste">Sudeste</button>
+          <button type="button" data-region="Sul">Sul</button>
+        </div>
+
+        <aside class="map-info" id="mapInfo">Clique em uma região para ver tecnologias aplicadas.</aside>
+      </section>
     </section>
 
-    <section id="contato">
-      <h2>Contato e Conscientização</h2>
-      <p>
-        Espaço reservado para mensagem final, formulário de contato e incentivo à preservação ambiental.
-      </p>
+    <section class="section contact" id="contato">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Seção 5</p>
+        <h2>Contato e Conscientização</h2>
+        <p>Compartilhe ideias para fortalecer uma agricultura mais responsável.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm">
+          <label>
+            Nome
+            <input type="text" id="name" required placeholder="Seu nome" />
+          </label>
+          <label>
+            E-mail
+            <input type="email" id="email" required placeholder="voce@email.com" />
+          </label>
+          <label>
+            Mensagem
+            <textarea id="message" rows="5" required placeholder="Escreva sua mensagem"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Enviar mensagem</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+
+        <aside class="final-message reveal">
+          <h3>“O futuro da agricultura depende das escolhas feitas hoje.”</h3>
+          <p>
+            Produção forte e meio ambiente preservado não são caminhos opostos. Com educação ambiental, fiscalização, tecnologia e responsabilidade, o campo pode alimentar o presente e proteger o amanhã.
+          </p>
+          <div class="socials" aria-label="Redes sociais">
+            <a href="#topo">Instagram</a>
+            <a href="#topo">YouTube</a>
+            <a href="#topo">Educação Ambiental</a>
+          </div>
+        </aside>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>Agro Forte, Futuro Sustentável — Créditos: Nathaly Rocha de Oliveira.</p>
-    <p>Projeto escolar sobre agronegócio sustentável.</p>
+    <p>Redes sociais | Créditos | Direitos autorais © 2026</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
